@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.woff2) format('woff2');
+}
+
+
+body {
+    font-family: worksans;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+:root {
+    --white: #FFFFFF;
+    --dark-purple: #301534;
+    --pink: #AD28EB;
+    --light-pink: #F8EEFF;
+    --pale-purple: #8B6990;
+
+}
+
+
+
+
+main {
+
+
+
+    flex: 1;
+
+    background-color: var(--light-pink);
+    position: relative;
+
+
+}
+
+
+
+.frame {
+    width: 40vw;
+    max-width: 600px;
+    min-width: 345px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+}
+
+.background {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.faqs {
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    color: var(--dark-purple);
+
+}
+
+.title {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+
+
+
+
+}
+
+.title .plus-icon {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+
+a:hover,
+a:active,
+a:visited {
+    color: var(--pink);
+}
+
+
+
+.question .answer {
+    display: none;
+}
+
+hr {
+    border: var(--light-pink) 0.3px;
+    border-style: solid;
+
+
+}
+
+.answer {
+    color: var(--pale-purple);
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width:375px) {
+    .frame {
+        min-width: 345px;
+    }
+
+}
